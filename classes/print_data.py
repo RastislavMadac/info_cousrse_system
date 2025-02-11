@@ -34,8 +34,8 @@ class Print(Person):
     
         
     def print_save_teatcher_data():
-        """"Teatcher saved succesfully!"""
-        print("Teatcher saved succesfully!")
+        """"Data was saved succesfully!"""
+        print("Data was saved succesfully!")
     
     def print_enter_name_of_course(self):
         return input(f"Enter name of {self.position}")
@@ -43,3 +43,16 @@ class Print(Person):
     def print_course_info_results(self, name):
         """Name of {self.position} is {name} """
         print(f"Name of {self.position} is {name} ")
+    
+    def print_choices():
+        print ("0-Close program \n1-Add teacher \n2-Add pupil\n3-Add course" )
+
+    def choice_input():
+        return input("Your choice? ")
+    
+    def wrong_choice():
+        """You have to wrong choice. I have to ask again"""
+        print("You have to wrong choice. I have to ask again")
+    
+    def print_end_program():
+        print("Good by have a nice day")
